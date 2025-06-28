@@ -1,0 +1,47 @@
+---
+# Стиль форматирования в духе Casey Muratori / Handmade Hero
+BasedOnStyle: LLVM  # Базироваться на стиле LLVM (но сильно переопределяется)
+
+IndentWidth: 2                  # Ширина отступа — 2 пробела
+TabWidth: 2                     # Ширина табуляции — 2 пробела
+ContinuationIndentWidth: 2     # Отступ для продолжения строки
+
+SpaceBeforeParens: Custom
+SpaceBeforeParensOptions:
+  AfterPlacementOperator: false
+
+BraceWrapping:                  # Перенос фигурных скобок (Allman-стиль)
+  AfterClass: true              # После объявления класса
+  AfterControlStatement: true   # После if, for, while
+  AfterEnum: true
+  AfterFunction: true           # После объявления функции
+  AfterNamespace: true
+  AfterStruct: true
+  AfterUnion: true
+  BeforeCatch: true           # Перед блоком catch
+  BeforeElse: true            # Перед else
+  IndentBraces: false         # Не добавлять отступ внутрь фигурных скобок
+
+PointerAlignment: Left         # * ближе к типу: int* ptr;
+DerivePointerBinding: false    # Не выводить поведение для * из окружения
+
+SpaceBeforeAssignmentOperators: true  # Пробел перед = += и др.
+
+AlignConsecutiveAssignments: true     # Выравнивать по = при нескольких присваиваниях
+AlignConsecutiveDeclarations: true    # Выравнивать по типу при объявлениях
+AlignTrailingComments: true           # Выравнивать комментарии справа
+AlignOperands: true                   # Выравнивать длинные выражения (например, арифм.)
+
+SortIncludes: false                         # Не сортировать #include
+IncludeBlocks: Preserve                     # Сохранять порядок include-блоков как есть
+
+ColumnLimit: 0                              # Нет ограничения на длину строки
+AllowShortFunctionsOnASingleLine: Empty     # Только пустые функции в одну строку
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+
+NamespaceIndentation: None              # Не делать отступы внутри namespace
+
+AlwaysBreakAfterReturnType: TopLevel    # Переносить return type на новую строку (только на верхнем уровне)
+
+...
