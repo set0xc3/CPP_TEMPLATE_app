@@ -7,12 +7,6 @@ App::App() {
 }
 
 void
-App::init() {}
-
-void
-App::deinit() {}
-
-void
-App::update() {}
+App::run() {}
 
 } // namespace Saura

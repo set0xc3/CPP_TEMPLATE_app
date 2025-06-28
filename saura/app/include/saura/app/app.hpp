@@ -9,10 +9,9 @@ private:
 
 public:
   App();
+  ~App();
 
-  void init();
-  void deinit();
-  void update();
+  void run();
 };
 
 } // namespace Saura

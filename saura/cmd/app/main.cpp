@@ -3,7 +3,7 @@
 int
 main() {
   auto app_ctx = new(Saura::App);
-  app_ctx->init();
-  app_ctx->update();
+  int  a       = 0;
+  app_ctx->run();
   return 0;
 }

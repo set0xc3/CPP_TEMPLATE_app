@@ -1,11 +1,9 @@
 ---
-# Стиль форматирования в духе Casey Muratori / Handmade Hero
-BasedOnStyle: LLVM  # Базироваться на стиле LLVM (но сильно переопределяется)
-
-IndentWidth: 2                  # Ширина отступа — 2 пробела
-TabWidth: 2                     # Ширина табуляции — 2 пробела
-ContinuationIndentWidth: 2     # Отступ для продолжения строки
-
+BasedOnStyle: LLVM
+Language: Cpp
+IndentWidth: 2
+TabWidth: 2
+ContinuationIndentWidth: 2
 SpaceBeforeParens: Custom
 SpaceBeforeParensOptions:
   AfterPlacementOperator: false
@@ -43,5 +41,4 @@ AllowShortLoopsOnASingleLine: false
 NamespaceIndentation: None              # Не делать отступы внутри namespace
 
 AlwaysBreakAfterReturnType: TopLevel    # Переносить return type на новую строку (только на верхнем уровне)
-
-...
+---
